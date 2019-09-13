@@ -3,7 +3,10 @@ import styled from "styled-components";
 
 
 const Cards = styled.div`
-   
+   padding: 2px;
+   background: rgb(163, 96, 96, .5);
+   margin: 10px;
+   border-radius: 20px;
 `
 
 

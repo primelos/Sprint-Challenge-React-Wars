@@ -7,8 +7,9 @@ const Box = styled.div`
     display:flex;
     flex-wrap: wrap;
     color:black;
-    background: rgb(163, 96, 96, .5);
-`
+    justify-content: center;
+    
+    `
 
 export default function Jedi (){
     const [troop, setTroop] = useState ([]);
@@ -29,7 +30,7 @@ export default function Jedi (){
         <Box>
             {troop.map(item =>(
                 <JediList
-                    
+                    key={item.id}
                     name={item.name}
                     eyeColor={item.eye_color}
                     hairColor={item.hair_color}
